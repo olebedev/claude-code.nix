@@ -1,0 +1,10 @@
+{
+  "name": "claude-code.nix",
+  "version": "0.2.35",
+  "main": "index.js",
+  "repository": "git@github.com:olebedev/claude-code.nix.git",
+  "author": "Oleg Lebedev <oleg@lebedev.au>",
+  "dependencies": {
+    "@anthropic-ai/claude-code": "0.2.35"
+  }
+}

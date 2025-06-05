@@ -26,7 +26,7 @@
       });
 
       devShells = forAllSystems (system: {
-        default = builtins.trace (builtins.attrNames packages."aarch64-darwin") pkgs.${system}.mkShellNoCC {
+        default = pkgs.${system}.mkShellNoCC {
           packages = with pkgs.${system}; [
             yarn
             packages.${system}.default

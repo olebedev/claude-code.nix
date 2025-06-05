@@ -5,6 +5,6 @@
   "repository": "git@github.com:olebedev/claude-code.nix.git",
   "author": "Oleg Lebedev <oleg@lebedev.au>",
   "dependencies": {
-    "@anthropic-ai/claude-code": "^0.2.56"
+    "@anthropic-ai/claude-code": "^1.0.11"
   }
 }

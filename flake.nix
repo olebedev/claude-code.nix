@@ -60,22 +60,25 @@
               ];
             };
           in
-          {
+          rec {
             claude = env.pkgs."@anthropic-ai/claude-code";
             amp = env.pkgs."@sourcegraph/amp";
             copilot = env.pkgs."@github/copilot";
+            default = pkgs.${system}.buildEnv {
+              name = "ai-conding-tools";
+              paths = [ claude amp copilot ];
+              pathsToLink = [ "/bin" ];
+            };
           }
         );
 
       devShells = forAllSystems (system: {
-        default = builtins.trace (builtins.attrNames packages."aarch64-darwin") pkgs.${system}.mkShellNoCC {
+        default = pkgs.${system}.mkShellNoCC {
           packages = (with pkgs.${system}; [
             yarn
             pkgs.${system}.js2nix.bin
           ]) ++ (with packages.${system}; [
-            claude
-            amp
-            copilot
+            default
           ]);
         };
       });

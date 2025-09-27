@@ -1,10 +1,12 @@
 {
-  "name": "claude-code.nix",
-  "version": "0.2.35",
+  "name": "ai-coding-tools",
+  "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:olebedev/claude-code.nix.git",
+  "repository": "git@github.com:olebedev/ai-coding-tools",
   "author": "Oleg Lebedev <oleg@lebedev.au>",
   "dependencies": {
-    "@anthropic-ai/claude-code": "0.2.35"
+    "@anthropic-ai/claude-code": "^1.0.127",
+    "@github/copilot": "^0.0.328",
+    "@sourcegraph/amp": "^0.0.1758945706-gc01c81"
   }
 }

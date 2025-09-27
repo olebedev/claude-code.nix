@@ -13,6 +13,7 @@
       "original": {
         "owner": "canva-public",
         "repo": "js2nix",
+        "rev": "8cd32b5c87767b019e0960b27599f6b9d195ddb0",
         "type": "github"
       }
     },

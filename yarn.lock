@@ -2,15 +2,25 @@
 # yarn lockfile v1
 
 
-"@anthropic-ai/claude-code@^0.2.35":
-  version "0.2.35"
-  resolved "https://registry.yarnpkg.com/@anthropic-ai/claude-code/-/claude-code-0.2.35.tgz#3309167f18e2e8ca40c42846ca213c65c1ad94f3"
-  integrity sha512-OTCLa2kvtbYJ2tDbKNxZ7N2kUMXGXTIzr5DW18zYSMMu5RpOLyL+A/DfKXNgcvri76ttttj7lcQRLmQ0pCqZDA==
+"@anthropic-ai/claude-code@^1.0.127":
+  version "1.0.127"
+  resolved "https://registry.yarnpkg.com/@anthropic-ai/claude-code/-/claude-code-1.0.127.tgz#f9a427a9e58ec92771e33e1e04617a14fcc6c372"
+  integrity sha512-5L0nzdNjH4jAj/sw7pP/J48/XwJ8sYFUvbkeStm+1lOyJOkAtWVBErdfju0D4j4zKUQfFrZewt4m/Hagd6W1Pw==
   optionalDependencies:
     "@img/sharp-darwin-arm64" "^0.33.5"
+    "@img/sharp-darwin-x64" "^0.33.5"
     "@img/sharp-linux-arm" "^0.33.5"
+    "@img/sharp-linux-arm64" "^0.33.5"
     "@img/sharp-linux-x64" "^0.33.5"
     "@img/sharp-win32-x64" "^0.33.5"
+
+"@github/copilot@^0.0.328":
+  version "0.0.328"
+  resolved "https://registry.yarnpkg.com/@github/copilot/-/copilot-0.0.328.tgz#4cca52f5b283c6f2112e5b9894ef882c213f4784"
+  integrity sha512-w3rYYiakmp0Ff8gYiZevTPYDJDtxm733Av5IVBDlctOwKI7M5EevcT35IATvEsyrvtUXOnKD6qVuLA4THTvdPg==
+  dependencies:
+    keytar-forked-forked "^7.10.2"
+    node-pty "npm:@devm33/node-pty@^1.0.8"
 
 "@img/sharp-darwin-arm64@^0.33.5":
   version "0.33.5"
@@ -19,10 +29,27 @@
   optionalDependencies:
     "@img/sharp-libvips-darwin-arm64" "1.0.4"
 
+"@img/sharp-darwin-x64@^0.33.5":
+  version "0.33.5"
+  resolved "https://registry.yarnpkg.com/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.5.tgz#e03d3451cd9e664faa72948cc70a403ea4063d61"
+  integrity sha512-fyHac4jIc1ANYGRDxtiqelIbdWkIuQaI84Mv45KvGRRxSAa7o7d1ZKAOBaYbnepLC1WqxfpimdeWfvqqSGwR2Q==
+  optionalDependencies:
+    "@img/sharp-libvips-darwin-x64" "1.0.4"
+
 "@img/sharp-libvips-darwin-arm64@1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.0.4.tgz#447c5026700c01a993c7804eb8af5f6e9868c07f"
   integrity sha512-XblONe153h0O2zuFfTAbQYAX2JhYmDHeWikp1LM9Hul9gVPjFY427k6dFEcOL72O01QxQsWi761svJ/ev9xEDg==
+
+"@img/sharp-libvips-darwin-x64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.4.tgz#e0456f8f7c623f9dbfbdc77383caa72281d86062"
+  integrity sha512-xnGR8YuZYfJGmWPvmlunFaWJsb9T/AO2ykoP3Fz/0X5XV2aoYBPkX6xqCQvUTKKiLddarLaxpzNe+b1hjeWHAQ==
+
+"@img/sharp-libvips-linux-arm64@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.0.4.tgz#979b1c66c9a91f7ff2893556ef267f90ebe51704"
+  integrity sha512-9B+taZ8DlyyqzZQnoeIvDVR/2F4EbMepXMc/NdVbkzsJbzkUjhXv/70GQJ7tdLA4YJgNP25zukcxpX2/SueNrA==
 
 "@img/sharp-libvips-linux-arm@1.0.5":
   version "1.0.5"
@@ -33,6 +60,13 @@
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.0.4.tgz#d4c4619cdd157774906e15770ee119931c7ef5e0"
   integrity sha512-MmWmQ3iPFZr0Iev+BAgVMb3ZyC4KeFc3jFxnNbEPas60e1cIfevbtuyf9nDGIzOaW9PdnDciJm+wFFaTlj5xYw==
+
+"@img/sharp-linux-arm64@^0.33.5":
+  version "0.33.5"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.33.5.tgz#edb0697e7a8279c9fc829a60fc35644c4839bb22"
+  integrity sha512-JMVv+AMRyGOHtO1RFBiJy/MBsgz0x4AWrT6QoEVVTyh1E39TrCUpTRI7mx9VksGX4awWASxqCYLCV4wBZHAYxA==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-arm64" "1.0.4"
 
 "@img/sharp-linux-arm@^0.33.5":
   version "0.33.5"
@@ -52,3 +86,112 @@
   version "0.33.5"
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.5.tgz#56f00962ff0c4e0eb93d34a047d29fa995e3e342"
   integrity sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==
+
+"@napi-rs/keyring-darwin-arm64@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-darwin-arm64/-/keyring-darwin-arm64-1.1.9.tgz#e9633813a16a476e8983eee8786dd33c8ffc901b"
+  integrity sha512-/lVnrSFrut+8pQC6IcqlfHKzcEmf2XvQDOZPB5X4vI23GrNXBd56EuBlFPdTBtx46A8Bn+Aqi6pS8cnprHtcCw==
+
+"@napi-rs/keyring-darwin-x64@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-darwin-x64/-/keyring-darwin-x64-1.1.9.tgz#34410bdf1407c1f539c53d9d0bde29b381ce1b66"
+  integrity sha512-G3PiFZTAFTzUnpSB31A/UaPjl48/3sDTLmLxaAZBEk7HcOyBnL31gA1YqhDCO7F2y5sD5TWiFiuID9MyqYOcjw==
+
+"@napi-rs/keyring-freebsd-x64@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-freebsd-x64/-/keyring-freebsd-x64-1.1.9.tgz#a58240acae38ddfc370c7152d2bfe142b0ef459b"
+  integrity sha512-R4XbvRhEzQyOy4yM+SMDgk8BgkLPkIzXGwR6QR0wJ2YrPeBx3F2TrgdHfsIGSn/X5Axg/2UlrCiZVciZ5BmusA==
+
+"@napi-rs/keyring-linux-arm-gnueabihf@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-arm-gnueabihf/-/keyring-linux-arm-gnueabihf-1.1.9.tgz#a8b5171374b5d248a811f18a6d42e149d712eee4"
+  integrity sha512-UrKy110I+zQyBtw4HLVUqZ1jDq11K3PmQIYgWAJNwB5VQOj4IQ63zLxk4V01Jx4bNOJmGNlvHDJUAyh/lC5Yww==
+
+"@napi-rs/keyring-linux-arm64-gnu@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-arm64-gnu/-/keyring-linux-arm64-gnu-1.1.9.tgz#64935ec66240418121c9d4a6b047916af6196ac9"
+  integrity sha512-yOrhVpNGexDYzybe3dhmHQRPBDjlZPtJDE+eGSi1JwEqYlWDB+4IWjRsetxnO63DhnMFRLeMTdwWghsYrA7VwA==
+
+"@napi-rs/keyring-linux-arm64-musl@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-arm64-musl/-/keyring-linux-arm64-musl-1.1.9.tgz#9a0549056e250af415a791f03702926bff4e2bc5"
+  integrity sha512-82EcuzoV/+Dxwi1HHhrEEprN5Ou7OsRKyTJSaRqiVuGvLaQDUhZX/4zXTTh4Pz24m22Q4aoJogafS31w8iKGGw==
+
+"@napi-rs/keyring-linux-riscv64-gnu@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-riscv64-gnu/-/keyring-linux-riscv64-gnu-1.1.9.tgz#1b57385bc385a1c4b914cb8a508e97cafdef336d"
+  integrity sha512-Q1ar7DszC1X8FW6w7Ql7b72GFeAUxkTiOuxXChCFBy7eWCQSDrr52ZLroIowp82RmkQLZebnK+IwSssD2Ntoag==
+
+"@napi-rs/keyring-linux-x64-gnu@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-x64-gnu/-/keyring-linux-x64-gnu-1.1.9.tgz#bdc275ff0ad888bf3927b6a93dbc3813f281e830"
+  integrity sha512-LMvrYt1ho3pEDECssA7ATbcMDgayEUwwSD+UfrC7Hj1+C6dlvipwt5njwUDCno2OeXbjjisCo4CR9fDmXa4sZA==
+
+"@napi-rs/keyring-linux-x64-musl@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-x64-musl/-/keyring-linux-x64-musl-1.1.9.tgz#3248f041dab97d7f8e56f673b80352e194e8aa79"
+  integrity sha512-x2i/TgS2/fM+6LRj1MrtVC580sepz5GcxbSCXpttx2H58uZKBF0vVM9HDPHoKP2w5++fyrA17eltJNYN3Ob46A==
+
+"@napi-rs/keyring-win32-arm64-msvc@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-win32-arm64-msvc/-/keyring-win32-arm64-msvc-1.1.9.tgz#0169f879253ac9e5a8a61660d339413c2f21181e"
+  integrity sha512-14t6p8CTBNfGzLO5LXqurT+pAOf/ocGjOM/qiG/LW+jPkhyJYBNI9e3HKq3QX+ObbnxVpt4fAY02b4XLt7EWig==
+
+"@napi-rs/keyring-win32-ia32-msvc@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-win32-ia32-msvc/-/keyring-win32-ia32-msvc-1.1.9.tgz#006ad295af3a32bd3895c09bb28fb6709d59a74d"
+  integrity sha512-7+7aXz5op6PtOnWYcK1GYXWQlk2zfpdPt9taLqmCCVpk1g4m3Gw1wyKyQxjrg9clHWdNhdWxhFEA0osDxG8/Eg==
+
+"@napi-rs/keyring-win32-x64-msvc@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-win32-x64-msvc/-/keyring-win32-x64-msvc-1.1.9.tgz#9119316cee8e9e05016b4935daf48ce88d1aa700"
+  integrity sha512-P1wsSrSqDqvcXLL7yiH2RsO3De65wuEQj1ZjV9s1MHfEP5dIdriNYZfFsRBlOsl32GoK3qFzsuH5DTVviGEHSw==
+
+"@napi-rs/keyring@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring/-/keyring-1.1.9.tgz#bf64b417a4a170b3abaee7ea16f43817942fb6c5"
+  integrity sha512-qjg04yaJ/gFqgG7wDqLlWBvZpsjvYDtwL+xOr2vSM2JrhojuIKsw7pH013U7xJOradTVGeQqhwqgZtt2IblgOw==
+  optionalDependencies:
+    "@napi-rs/keyring-darwin-arm64" "1.1.9"
+    "@napi-rs/keyring-darwin-x64" "1.1.9"
+    "@napi-rs/keyring-freebsd-x64" "1.1.9"
+    "@napi-rs/keyring-linux-arm-gnueabihf" "1.1.9"
+    "@napi-rs/keyring-linux-arm64-gnu" "1.1.9"
+    "@napi-rs/keyring-linux-arm64-musl" "1.1.9"
+    "@napi-rs/keyring-linux-riscv64-gnu" "1.1.9"
+    "@napi-rs/keyring-linux-x64-gnu" "1.1.9"
+    "@napi-rs/keyring-linux-x64-musl" "1.1.9"
+    "@napi-rs/keyring-win32-arm64-msvc" "1.1.9"
+    "@napi-rs/keyring-win32-ia32-msvc" "1.1.9"
+    "@napi-rs/keyring-win32-x64-msvc" "1.1.9"
+
+"@sourcegraph/amp@^0.0.1758945706-gc01c81":
+  version "0.0.1758945706-gc01c81"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/amp/-/amp-0.0.1758945706-gc01c81.tgz#408923784b329f95bb65800eafffe0f633336608"
+  integrity sha512-+myDR74G7em1eAmFWHpl7o4oUMAZAc2ZwOUTLGX/YGdcVWgzhvJf5VulQbHYddIgRubeCNCWb1lMx5Zf6FAnyQ==
+  dependencies:
+    "@napi-rs/keyring" "1.1.9"
+
+keytar-forked-forked@^7.10.2:
+  version "7.10.3"
+  resolved "https://registry.yarnpkg.com/keytar-forked-forked/-/keytar-forked-forked-7.10.3.tgz#154e57f5c102e2bfe626a630a7eb17bdb1257c2e"
+  integrity sha512-ipErTUO1NPXmngYhnMrda0yOIOPSNbVJ2BRjk3kNozLx3UmGICnzCfEDemuLY6HgP+rV0c9F+Opt+89+Ydbw6w==
+  dependencies:
+    node-addon-api "^8.3.0"
+
+node-addon-api@^7.1.0:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-7.1.1.tgz#1aba6693b0f255258a049d621329329322aad558"
+  integrity sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==
+
+node-addon-api@^8.3.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-8.5.0.tgz#c91b2d7682fa457d2e1c388150f0dff9aafb8f3f"
+  integrity sha512-/bRZty2mXUIFY/xU5HLvveNHlswNJej+RnxBjOMkidWfwZzgTbPG1E3K5TOxRLOR+5hX7bSofy8yf1hZevMS8A==
+
+"node-pty@npm:@devm33/node-pty@^1.0.8":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@devm33/node-pty/-/node-pty-1.0.9.tgz#dd0dd8bb05a4467c9d4ac416d9db98b7e57e78de"
+  integrity sha512-5yzbTTywkaFk1iRwte2aWEpyDfcpDjCofVD1BiOUQI+fsCvp/+RdJnB4jgnULrdlWOEWuBf+bg4/NZKVApPhoQ==
+  dependencies:
+    node-addon-api "^7.1.0"
